@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Schoology</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/Encode.css" />
+  </head>
+  <body onload="loggedin()">
+    
+  </body>
+  <body onload="allowedinthispage()">
+    <nav onload="loggedin()">
+      <div>
+        <button onclick="window.location.href='index.html'" id="home">
+          Home
+        </button>
+        <button id="about" onclick="window.location.href='link.html'">Link</button>
+        <button id="embed3kho" onclick="window.location.href='embedkho.html'">Embeded 3kho</button>
+        <button id="bookmarklets" onclick="window.location.href='bookmarklets.html'">Bookmarklets</button>
+        <button id="Games" onclick="window.location.href='Link-section.html'">Game Hub</button>
+      </div>
+      <div>
+        <button id="login-btn">Login</button>
+        <button id="logout-btn" style="display: none">Logout</button>
+      </div>
+    </nav>
+    <div class="container">
+      
+      <select id="ai-select">
+        <option value="Encode">Encode</option>
+        <option value="Decode">Decode</option>
+      </select>
+      <input type="text" id="question" placeholder="Enter text to encode/decode" />
+      <button id="ask-button">Submit</button>
+      <div id="output-div" class="black"></div>
+      <button id="copy-button" class=" Copy">Copy to Clipboard</button>
+    </div>
+    <script src="/Encode.js" defer></script>
+  </body>
+</html>
