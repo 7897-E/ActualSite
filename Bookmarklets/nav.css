@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+  background-color: #444444;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+
+nav a:hover {
+  background-color: darkgray;
+}
+
+#encode {
+  position: absolute;
+  left: 125px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+#about {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+#bookmarklets {
+  position: absolute;
+  left:455px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+/* Login Button */
+#login-btn {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+
+#login-btn:hover {
+  background-color: darkgray;
+}
+
+/* Logout Button */
+#logout-btn {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+
+#logout-btn:hover {
+  background-color: darkgray;
+}
+
+/* Page Content */
+.content {
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  border-radius: 15px;
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+}
+.input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+}
+#embed3kho {
+  position: absolute;
+  left: 290px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}

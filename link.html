@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Schoology</title>
+    <link rel="stylesheet" href="nav.css" />
+  </head>
+  <body onload="loggedin()">
+    <nav>
+      <div>
+        <button onclick="window.location.href='index.html'" id="home">
+          Home
+        </button>
+        <button id="encode" onclick="window.location.href='indexi.html'">
+          Encode/Decode
+        </button>
+        <button id="embed3kho" onclick="window.location.href='embedkho.html'">
+          Embeded 3kho
+        </button>
+        <button id="bookmarklets" onclick="window.location.href='bookmarklets.html'">Bookmarklets</button>
+      </div>
+      <button id="Games" onclick="window.location.href='Link-section.html'">Game Hub</button>
+      <div></div>
+      <div>
+        <button id="login-btn">Login</button>
+        <button id="logout-btn" style="display: none">Logout</button>
+
+        <!-- Replace this button with the logout button if the user is logged in -->
+        <!-- <a id="logout-btn" href="#">Logout</a> -->
+      </div>
+    </nav>
+    <div class="container">
+      <form onsubmit="submitForm(); return false;">
+        <input
+          type="text"
+          class="input"
+          id="link-input"
+          placeholder="http://example.com/"
+        />
+        <button type="submit" class="submit" id="submit">Submit</button>
+      </form>
+      <div id="output-div" class="black"></div>
+      <button id="copy-button" class="copy">Copy to Clipboard</button>
+    </div>
+  </body>
+<script src="/script.js" defer></script>
+  <style>
+    #copy-button {
+      padding: 10px 20px;
+      background-color: darkgray;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    #submit {
+      padding: 10px 20px;
+      background-color: darkgray;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+    }
+    .submit {
+      position: absolute;
+      left: 320px;
+    }
+    .black {
+      color: white;
+      border-radius: 10px;
+      background-color: black;
+      color: white;
+      border: 10px solid black;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 240px;
+    }
+    .copy {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 270px;
+    }
+    .input {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      width: 100%;
+      background-color: lightgray;
+      display: flex;
+      justify-content: center;
+    }
+    #encode {
+      position: absolute;
+      left: 125px;
+      top: 10px;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #444444;
+    }
+    #about {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #444444;
+      position: absolute;
+      left: 125px;
+      top: 10px;
+    }
+    #home {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #444444;
+    }
+    footer {
+      background-color: #333333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position:absolute;
+      text-align: center;
+      bottom:100px;
+      justify-content: center;
+      left:500px;
+    }
+    #embed3kho {
+      position: absolute;
+      left: 290px;
+      top: 10px;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #444444;
+    }
+    #bookmarklets {
+  position: absolute;
+  left:455px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+    #Games {
+  position: absolute;
+  left: 620px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+  </style>
+</html>
