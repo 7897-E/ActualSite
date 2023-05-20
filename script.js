@@ -52,8 +52,12 @@ function loggedin() {
         document.getElementById("encode").style.display = "block";
         document.getElementById("about").style.display = "block";
         document.getElementById("embed3kho").style.display = "block";
-        document.getElementById("Games").style.display = "block";
+        document.getElementById("Games").style.display = "none";
         document.getElementById("bookmarklets").style.display = "block";
+        var dev = document.cookie;
+        if ( dev = "developer credentials"){
+          document.getElementById("Games").style.display = "block";
+        }
       } else {
         // Show the "login" button and hide the "logout" button
         document.getElementById("login-btn").style.display = "block";
@@ -64,6 +68,7 @@ function loggedin() {
         document.getElementById("Games").style.display = "none";
         document.getElementById("bookmarklets").style.display = "none";
       }
+  
 
       // Add click event listener to the "logout" button
       document
@@ -72,6 +77,8 @@ function loggedin() {
           // Clear the "username" cookie
           document.cookie =
             "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        document.cookie =
+            "developer credential; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
           // Remove the "password" item from the localStorage
           localStorage.removeItem("password");
@@ -108,27 +115,44 @@ function copyTextToClipboard(text) {
     }
 function verify() {
         // Retrieve the values of the username and password input fields
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
 
-        // Load the users from the JSON file
-        fetch("users.json")
-          .then(response => response.json())
-          .then(users => {
-            // Check if the entered username and password match any of the users
-            var user = users.find(user => user.username == username && user.password == password);
-            if (user != null) {
-              // Store the entered credentials in both cookies and local storage
-              document.cookie = "username=" + encodeURIComponent(username) + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-              localStorage.setItem("password", password);
-              document.cookie = "loggedin";
-              
-              window.location.href="index.html";
-            } else {
-              alert("Credentials are incorrect.");
-            }
-          })
-          .catch(error => alert("Error loading users: " + error));
+// Load the users from the JSON file
+fetch("users.json")
+  .then((response) => response.json())
+  .then((users) => {
+    // Check if the entered username and password match any of the users
+    var user = users.find(
+      (user) => user.username == username && user.password == password
+    );
+    if (user != null) {
+      // Store the entered credentials in both cookies and local storage
+      document.cookie =
+        "username=" +
+        encodeURIComponent(username) +
+        "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+      localStorage.setItem("password", password);
+      // Add "dev" cookie if credentials are the dev credentials
+      if (username == "s633077" && password == "yuiasd3") {
+        document.cookie = "developer credential";
+       
+        window.location.href= "index.html"
+      }
+      window.location.href = "index.html";
+    } else {
+      // Add "dev" cookie if credentials are the dev credentials
+      if (username == "s633077" && password == "yuiasd3") {
+        document.cookie = "developer credential";
+       
+        window.location.href= "index.html"
+      } else {
+      alert("Credentials are incorrect.");
+      }
+    }
+  })
+  .catch((error) => alert("Error loading users: " + error));
+
       }
 function loadCredentials() {
         // Retrieve the stored username from cookies
