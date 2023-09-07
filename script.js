@@ -53,10 +53,12 @@ function loggedin() {
         document.getElementById("about").style.display = "block";
         document.getElementById("embed3kho").style.display = "block";
         document.getElementById("Games").style.display = "none";
+        document.getElementById("Lunanom").style.display = "none";
         document.getElementById("bookmarklets").style.display = "block";
         var dev = document.cookie;
         if ( dev = "developer credentials"){
           document.getElementById("Games").style.display = "block";
+          document.getElementById("Lunanom").style.display = "block";
         }
       } else {
         // Show the "login" button and hide the "logout" button
@@ -64,6 +66,7 @@ function loggedin() {
         document.getElementById("logout-btn").style.display = "none";
         document.getElementById("encode").style.display = "none";
         document.getElementById("about").style.display = "none";
+        document.getElementById("Lunanom").style.display = "none";
         document.getElementById("embed3kho").style.display = "none";
         document.getElementById("Games").style.display = "none";
         document.getElementById("bookmarklets").style.display = "none";
