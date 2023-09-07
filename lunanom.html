@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Actual</title>
+    <link rel="stylesheet" href="nav.css" />
+  </head>
+  <body onload="loggedin()">
+    <nav>
+      <div>
+        <button onclick="window.location.href='index.html'" id="home">
+          Home
+        </button>
+        <button id="about" onclick="window.location.href='link.html'">
+          Link
+        </button>
+        <button id="encode" onclick="window.location.href='indexi.html'">
+          Encode/Decode
+        </button>
+        <button id="bookmarklets" onclick="window.location.href='bookmarklets.html'">Bookmarklets</button>
+      </div>
+      <button id="Games" onclick="window.location.href='Link-section.html'">Game Hub</button>
+      <div></div>
+      <div>
+        <button id="login-btn">Login</button>
+        <button id="logout-btn" style="display: none">Logout</button>
+
+        <!-- Replace this button with the logout button if the user is logged in -->
+        <!-- <a id="logout-btn" href="#">Logout</a> -->
+      </div>
+    </nav>
+    <div>
+      <button onclick="toggleFullScreen()" id="fullscreen">Fullscreen</button>
+      <button onclick="resetIframe()" id="reset-embed">Reset Embed</button>
+      <button onclick="window.location.href='https://replit.com/@DbugGames/Lunanom'" class="button" >Open</button>
+    </div>
+    <div id="website.container">
+      <iframe
+        id="embedded-site"
+        src="https://replit.com/@DbugGames/Lunanom"
+      ></iframe>
+    </div>
+    <footer>&copy; 2023 Site. All rights reserved.</footer>
+  </body><script src="/script.js" defer></script>
+  <style>
+    #home {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #444444;
+    }
+    #encode {
+      position: absolute;
+      left: 125px;
+      top: 10px;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #444444;
+    }
+    #about {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #444444;
+      position: absolute;
+      left: 280px;
+      top: 10px;
+    }
+    #fullscreen {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #444444;
+      justify-content: center;
+    }
+    #reset-embed {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #444444;
+      justify-content: center;
+    }
+    .website.container {
+      width: 50%;
+      height: 75vh;
+      overflow: hidden;
+      position: relative;
+    }
+    #embedded-site {
+      width: 50%;
+      height: 75%;
+      position: absolute;
+      top: 100px;
+      justify-content: center;
+      left: 350px;
+      border: none;
+    }
+    #bookmarklets {
+  position: absolute;
+  left:385px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+    #Games {
+  position: absolute;
+  left: 540px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+    .button {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #444444;
+      justify-content: center;
+    }
+  </style>
+</html>
