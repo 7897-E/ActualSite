@@ -146,6 +146,16 @@ input[type="text"] {
   border-radius: 20px;
   background-color: #444444;
 }
+#Gamess {
+  position: absolute;
+  left: 750px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
 .buttons {
   color: white;
   text-decoration: none;
