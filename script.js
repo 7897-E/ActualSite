@@ -41,7 +41,7 @@ function allowedinthispage() {
     .catch((error) => alert("Error loading users: " + error));
 }
 function loggedin() {
-  about();
+  
   // Check if the "username" cookie and "password" item exist
   if (
     document.cookie.indexOf("username") >= 0 &&
@@ -60,6 +60,7 @@ function loggedin() {
     if ((dev = "developer credentials")) {
       document.getElementById("Games").style.display = "block";
       document.getElementById("Lunanom").style.display = "block";
+      about();
     }
   } else {
     // Show the "login" button and hide the "logout" button
