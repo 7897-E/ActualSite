@@ -398,15 +398,7 @@
       <button type="button" class="collapsible">Edit Text</button>
       <div class="content">
         <p>
-          javascript:document.body.contentEditable = 'true';
-          document.designMode='on'; void 0
-        </p>
-      </div>
-      <button type="button" class="collapsible">Un Edit Text</button>
-      <div class="content">
-        <p>
-          javascript:document.body.contentEditable = 'false';
-          document.designMode='off'; void 0
+          javascript:(()=>{b=document.body;x=b.contentEditable=="true"?"false":"true";b.contentEditable=b.spellcheck=x})()
         </p>
       </div>
       <button type="button" class="collapsible">Asteroids</button>
