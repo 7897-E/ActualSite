@@ -178,3 +178,7 @@ input[type="text"] {
 .buttons:hover {
   background-color: #999999; /* Change the background color on hover to red */
 }
+.buttonlink {
+  color:white;
+  text-decoration: none;
+}
