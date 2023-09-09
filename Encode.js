@@ -161,22 +161,27 @@ function loggedin() {
         document.getElementById("embed3kho").style.display = "none";
       }
 
-  // Add click event listener to the "logout" button
-  document.getElementById("logout-btn").addEventListener("click", function () {
-    // Clear the "username" cookie
-    document.cookie =
-      "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-
-    // Remove the "password" item from the localStorage
-    localStorage.removeItem("password");
-
-    // Redirect to the home page
-    window.location.href = "index.html";
-  });
-
   // Add click event listener to the "login" button
   document.getElementById("login-btn").addEventListener("click", function () {
     // Redirect to the login page
     window.location.href = "login.html";
   });
 }
+function logout() {
+  // Clear the "username" cookie
+  document.cookie =
+    "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+  // Clear the "developer credential" cookie
+  document.cookie =
+    "developer credential=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+  // Remove the "password" item from the localStorage
+  localStorage.removeItem("password");
+
+  // Redirect to the home page
+  window.location.href = "index.html";
+}
+
+// Add click event listener to the "logout" button
+document.getElementById("logout-btn").addEventListener("click", logout);
