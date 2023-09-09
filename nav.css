@@ -163,3 +163,18 @@ input[type="text"] {
   border-radius: 20px;
   background-color: #444444;
 }
+.buttonsn {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+  transition: background-color 0.3s; /* Add a smooth transition for the background color */
+}
+
+.buttonsn:hover {
+  background-color: #990000; /* Change the background color on hover to red */
+}
+.buttons:hover {
+  background-color: #999999; /* Change the background color on hover to red */
+}
