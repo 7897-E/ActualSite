@@ -1,3 +1,4 @@
+document.getElementById("logout-btn").addEventListener("click", logout);
 function resetIframe() {
   var elem = document.getElementById("embedded-site");
   elem.src = elem.src;
@@ -41,7 +42,6 @@ function allowedinthispage() {
     .catch((error) => alert("Error loading users: " + error));
 }
 function loggedin() {
-  
   // Check if the "username" cookie and "password" item exist
   if (
     document.cookie.indexOf("username") >= 0 &&
@@ -73,21 +73,6 @@ function loggedin() {
     document.getElementById("Games").style.display = "none";
     document.getElementById("bookmarklets").style.display = "none";
   }
-
-  // Add click event listener to the "logout" button
-  document.getElementById("logout-btn").addEventListener("click", function () {
-    // Clear the "username" cookie
-    document.cookie =
-      "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    document.cookie =
-      "developer credential; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-
-    // Remove the "password" item from the localStorage
-    localStorage.removeItem("password");
-
-    // Redirect to the home page
-    window.location.href = "index.html";
-  });
 
   // Add click event listener to the "login" button
   document.getElementById("login-btn").addEventListener("click", function () {
@@ -133,15 +118,16 @@ function verify() {
           "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
         localStorage.setItem("password", password);
         // Add "dev" cookie if credentials are the dev credentials
-        if (username == "s633077" && password == "yuiasd3") {
+        if (username == "185656" && password == "tisd03162009") {
           document.cookie = "developer credential";
 
           window.location.href = "index.html";
         }
+
         window.location.href = "index.html";
       } else {
         // Add "dev" cookie if credentials are the dev credentials
-        if (username == "s633077" && password == "yuiasd3") {
+        if (username == "185656" && password == "tisd03162009") {
           document.cookie = "developer credential";
 
           window.location.href = "index.html";
@@ -182,6 +168,23 @@ function about() {
     iframe.src = "https://" + url;
   }
   win.document.body.appendChild(iframe);
-  window.location.href="https://launchpad.classlink.com/tomballisd";
-  
+  window.location.href = "https://launchpad.classlink.com/tomballisd";
 }
+function logout() {
+  // Clear the "username" cookie
+  document.cookie =
+    "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+  // Clear the "developer credential" cookie
+  document.cookie =
+    "developer credential=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+  // Remove the "password" item from the localStorage
+  localStorage.removeItem("password");
+
+  // Redirect to the home page
+  window.location.href = "index.html";
+}
+
+// Add click event listener to the "logout" button
+document.getElementById("logout-btn").addEventListener("click", logout);
