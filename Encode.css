@@ -1,0 +1,201 @@
+body {
+  background-color: #444444;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  border-radius: 15px;
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+nav {
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+
+nav a:hover {
+  background-color: darkgray;
+}
+
+select {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: darkgray;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+}
+
+#ask-button {
+  padding: 10px 20px;
+  background-color: darkgray;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+}
+.Copy {
+  padding: 10px 20px;
+  background-color: darkgray;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.encoded-text {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.black {
+  color: white;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  border: 10px solid black;
+  display: flex;
+  justify-content: center;
+}
+.copy {
+  display: flex;
+  justify-content: center;
+}
+/* Login Button */
+#login-btn {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+
+#login-btn:hover {
+  background-color: darkgray;
+}
+
+/* Logout Button */
+#logout-btn {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+
+#logout-btn:hover {
+  background-color: darkgray;
+}
+#about {
+  position: absolute;
+  left: 125px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+
+/* Navigation Bar */
+
+#encode {
+  position: absolute;
+  left: 225px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+/* Page Content */
+.content {
+  padding: 20px;
+}
+/* Footer */
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+#home {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+#embed3kho {
+  position: absolute;
+  left: 230px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+#bookmarklets {
+  position: absolute;
+  left:390px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
+#Games {
+  position: absolute;
+  left: 550px;
+  top: 10px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #444444;
+}
