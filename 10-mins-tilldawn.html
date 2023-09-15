@@ -76,10 +76,61 @@
         image-rendering: pixelated;
         -ms-interpolation-mode: nearest-neighbor;
       }
+      #button-container-test {
+            position: fixed;
+            top: -50px; /* Initially hide the container above the viewport */
+            left: 50%; /* Center the container horizontally */
+            transform: translateX(-50%); /* Center the container horizontally */
+            width: 75px; /* Set the desired width for the container */
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            transition: top 0.3s ease-in-out;
+            color:#000;
+            border-radius: 20px;
+          }
+
+          #show-button-test {
+            color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      background-color: #444444;
+
+          #show-button-test:hover {
+            background-color: #0056b3;
+          }
     </style>
   </head>
 
   <body onload="onResize();">
     <div id="gameContainer" data-pixelated="true"></div>
+    <div id="button-container-test">
+      <button id="show-button-test" onclick="test()">Back</button>
+    </div>
   </body>
+  <script>
+      const buttonContainer = document.getElementById("button-container-test");
+      const showButton = document.getElementById("show-button-test");
+
+      document.addEventListener("mousemove", (e) => {
+        // Get the vertical position of the mouse cursor
+        const mouseY = e.clientY;
+
+        // You can adjust the threshold (e.g., 20) to control how close to the top the mouse needs to be
+        const threshold = 20;
+
+        if (mouseY < threshold) {
+          // If the mouse is near the top, show the button
+          buttonContainer.style.top = "0";
+        } else {
+          // Otherwise, hide the button above the viewport
+          buttonContainer.style.top = "-50px";
+        }
+      });
+
+      function test() {
+        window.location.href = "Link-section.html";
+      }
+    </script>
 </html>
