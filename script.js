@@ -56,6 +56,7 @@ function loggedin() {
     document.getElementById("Games").style.display = "none";
     document.getElementById("Lunanom").style.display = "none";
     document.getElementById("bookmarklets").style.display = "block";
+    document.getElementById("about").style.display = "block";
     var dev = document.cookie;
     if ((dev = "developer credentials")) {
       document.getElementById("Games").style.display = "block";
@@ -72,6 +73,7 @@ function loggedin() {
     document.getElementById("embed3kho").style.display = "none";
     document.getElementById("Games").style.display = "none";
     document.getElementById("bookmarklets").style.display = "none";
+    document.getElementById("about").style.display = "none";
   }
 
   // Add click event listener to the "login" button
