@@ -2,5 +2,8 @@
   { "username": "185656", "password": "tisd03162009" },
   { "username": "Cesar", "password": "Reyes" },
   { "username": "Francys", "password": "Machado" },
-  { "username": "Santi1", "password": "3021" }
+  { "username": "Santi1", "password": "3021" },
+  {"username":"guest","password":"password"}
+  
+  
 ]
