@@ -62,7 +62,7 @@ function loggedin() {
     if ((dev = "developer credentials")) {
       document.getElementById("Games").style.display = "block";
       document.getElementById("Lunanom").style.display = "block";
-      about();
+      
     }
   } else {
     // Show the "login" button and hide the "logout" button
