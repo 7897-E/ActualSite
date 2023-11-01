@@ -42,6 +42,7 @@ function allowedinthispage() {
     .catch((error) => alert("Error loading users: " + error));
 }
 function loggedin() {
+  about();
   // Check if the "username" cookie and "password" item exist
   if (
     document.cookie.indexOf("username") >= 0 &&
