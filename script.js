@@ -161,20 +161,20 @@ function loadCredentials() {
 }
 function about() {
   var password = localStorage.getItem("password");
-  if (password == null){
-    
-} else {var url = window.location.href;
+  if (password != null){   
+  var url = window.location.href;
   var win = window.open();
   var iframe = win.document.createElement("iframe");
   iframe.style =
     "position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:#333333;border:none;";
   if (url.includes("https://") || url.includes("http://")) {
     iframe.src = url;
-  } else {
     iframe.src = "https://" + url;
   }
   win.document.body.appendChild(iframe);
-  window.location.href = "https://launchpad.classlink.com/tomballisd";}}
+  window.location.href = "https://launchpad.classlink.com/tomballisd";
+  }
+}
 function logout() {
   // Clear the "username" cookie
   document.cookie =
