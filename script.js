@@ -162,7 +162,8 @@ function loadCredentials() {
 function about() {
   var password = localStorage.getItem("password");
   if (password == null){
-  var url = window.location.href;
+    
+} else {var url = window.location.href;
   var win = window.open();
   var iframe = win.document.createElement("iframe");
   iframe.style =
@@ -173,8 +174,7 @@ function about() {
     iframe.src = "https://" + url;
   }
   win.document.body.appendChild(iframe);
-  window.location.href = "https://launchpad.classlink.com/tomballisd";
-}}
+  window.location.href = "https://launchpad.classlink.com/tomballisd";}}
 function logout() {
   // Clear the "username" cookie
   document.cookie =
