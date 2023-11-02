@@ -160,6 +160,8 @@ function loadCredentials() {
   }
 }
 function about() {
+  var password = localStorage.getItem("password");
+  if (password == null){
   var url = window.location.href;
   var win = window.open();
   var iframe = win.document.createElement("iframe");
@@ -172,7 +174,7 @@ function about() {
   }
   win.document.body.appendChild(iframe);
   window.location.href = "https://launchpad.classlink.com/tomballisd";
-}
+}}
 function logout() {
   // Clear the "username" cookie
   document.cookie =
